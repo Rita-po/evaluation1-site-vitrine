@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+
+/* Body styling*/
+
+body,
+html {
+    font-family: "Open sans", sans serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* main content styling*/
+
+main {
+    display: contents;
+    position: relative;
+    min-height: 100%;
+}
+
+main p {
+    font-size: 18px;
+    text-align: left;
+    padding: 3%;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 3%;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left;
+    padding: 3%;
+}
+
+.maincontent1,
+.maincontent2,
+.maincontent3,
+.maincontent4 {
+    padding-bottom: 4%;
+}
+
+.maincontent1,
+.maincontent3 {
+    background-color: rgba(255, 120, 66, 0.808);
+    color: rgb(255, 232, 232);
+}
+
+.maincontent2,
+.maincontent4 {
+    color: rgb(255, 113, 1);
+}
+
+.nousContacter {
+    text-align: center;
+}
+
+
+/*"les violences" page table styling*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 99, 71);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+table ul {
+    list-style: inside;
+    padding: 10px;
+}
+
+table th {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    background-color: rgb(112, 0, 0);
+}
+
+table tr {
+    text-align: left;
+    width: auto;
+}
+
+table td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+table .mobile-head {
+    display: none;
+}
+
+
+/*"les violences" page responsive table styling*/
+
+@media screen and (max-width: 600px) {
+    table {
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 99, 71);
+        border-collapse: collapse;
+        margin: 1px;
+        padding: 2px;
+        table-layout: fixed;
+        align-items: center;
+    }
+    table ul {
+        list-style: inside;
+        text-align: left;
+        display: block;
+    }
+    table td {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    table tr {
+        text-align: left;
+        margin: 8px;
+        display: block;
+    }
+    table tr:first-child {
+        display: none;
+    }
+    table .mobile-head {
+        font-weight: bold;
+        float: left;
+        text-align: center;
+        display: block;
+        border: 1px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+        background-color: rgb(112, 0, 0);
+    }
+}
+
+
+/*end of "les violences" page table styling*/
+
+
+/*"adherer" page link styling*/
+
+.status,
+.adherer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+/*responsive link styling*/
+
+@media screen and (max-width:560px) {
+    .status,
+    .adherer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*"don" page styling*/
+
+.faireundon {
+    text-align: center;
+}
+
+
+/*list styling*/
+
+.maincontent1 ul,
+.maincontent2 ul,
+.maincontent3 ul,
+.maincontent4 ul {
+    list-style: circle;
+    margin-left: 50px;
+}
+
+
+/* facebook iframe on "actions" page styling*/
+
+.iframeFb {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* google map iframe on "contact" page styling*/
+
+.map {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*youtube iframe on "action" page styling*/
+
+.video {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*main link styling*/
+
+main a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    padding: 1%;
+    background-color: rgb(255, 103, 77);
+}
+
+main a:hover,
+a:visited {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+
+/* responsive link styling*/
+
+@media screen and (max-width:560px) {
+    main a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*---end of main styling---*/
+
+
+/* Navbar styling*/
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 113, 1);
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding: 0.8rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 180, 66);
+}
+
+
+/* navbar for mobile device styling*/
+
+@media screen and (max-width:560px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}
+
+
+/*---end of navbar styling---/*
+
+
+/*footer styling*/
+
+.page-footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 113, 1);
+    position: sticky;
+    top: 100%;
+    width: 100%;
+}
+
+.footer-copyright {
+    color: rgb(255, 255, 255);
+    padding: 1% 0;
+    text-align: center;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 2%;
+}
+
+.contact a {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    padding: 2em;
+}
+
+
+/*---end of footer styling---*/
