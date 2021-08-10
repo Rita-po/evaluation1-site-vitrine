@@ -1,0 +1,42 @@
+/*"accueil" page styling*/
+
+#imageprincipale {
+    display: flex;
+    padding-right: 20%;
+    padding-top: 5em;
+    width: 100%;
+}
+
+#imageprincipale img {
+    min-height: 50%;
+    max-width: 100%;
+}
+
+address {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.maincontent1,
+.maincontent1 p,
+.maincontent1 h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.emergencynumber {
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.emergencynumber img {
+    width: 30%;
+    max-width: 100%;
+}
+
+
+/*--end of "accueil" page styling--*/
